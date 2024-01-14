@@ -1,7 +1,10 @@
-const removeFromArray = function(myArr, arrElement) {
+const removeFromArray = function(myArr, ...theArgs) {
     
-    let position = myArr.indexOf(arrElement);
-    myArr.splice(position, 1);
+    for (let i = 0; i < theArgs.length; i++) {
+        let position = myArr.indexOf(theArgs[i]);
+        myArr.splice(position, 1);
+    }
+
     return myArr;
 
 };
