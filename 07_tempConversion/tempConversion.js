@@ -1,8 +1,9 @@
-const convertToCelsius = function(tempF) {
+const convertToCelsius = function(tempFar) {
 
-  let tempC = (tempF - 32) * 5/9;
+  let tempCel = (tempFar - 32) * 5/9;
+  let tempCelRounded = +tempCel.toFixed(1);
 
-  return tempC;
+  return tempCelRounded;
 
 };
 
