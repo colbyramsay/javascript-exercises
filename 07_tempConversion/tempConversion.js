@@ -7,7 +7,13 @@ const convertToCelsius = function(tempFar) {
 
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(tempCel) {
+
+  let tempFar = (tempCel * 9/5 + 32);
+  let tempFarRounded = +tempFar.toFixed(1);
+
+  return tempFarRounded;
+  
 };
 
 // Do not edit below this line
