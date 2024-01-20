@@ -1,13 +1,18 @@
-const fibonacci = function() {
-    const myArr = [1,1];
+const fibonacci = function(x) {
+    const myArr = [0,1];
     for (i = 2; i <= 25; i++) {
         myArr[i] = myArr[i-2] + myArr[i-1];
     }
-    alert (myArr);
+    //alert (myArr);
+    //alert (myArr[x]);
+    if (x < 0) {
+        //alert ("OOPS");
+        return "OOPS";
+    }
+    return myArr[x];
 };
 
-fibonacci();
+//fibonacci(-25);
 
 // Do not edit below this line
-//1, 1, 2, 3, 5, 8,
 module.exports = fibonacci;
